@@ -30,7 +30,12 @@ public class Book {
 //
         return json;
     }
-
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public String getResource() {
+        Gson gson = new Gson();
+        return gson.toJson(new Book());
+    }
     public Book() {
 
         this.title = "Java Made Easy";
