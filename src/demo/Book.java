@@ -20,22 +20,22 @@ public class Book {
 
 
 
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getMessage() {
-//
-       GsonBuilder builder = new GsonBuilder();
-       Gson gson = builder.create();
-        String json = title+description +author+year;
-//
-        return json;
-    }
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public String getResource() {
-        Gson gson = new Gson();
-        return gson.toJson(new Book());
-    }
+//    @GET
+//    @Produces(MediaType.TEXT_PLAIN)
+//    public String getMessage() {
+////
+//       GsonBuilder builder = new GsonBuilder();
+//       Gson gson = builder.create();
+//        String json = title+description +author+year;
+////
+//        return json;
+//    }
+//    @GET
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public String getResource() {
+//        Gson gson = new Gson();
+//        return gson.toJson(new Book());
+//    }
     public Book() {
 
         this.title = "Java Made Easy";
